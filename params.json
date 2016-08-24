@@ -1,0 +1,6 @@
+{
+  "name": "Exif",
+  "tagline": "A static web page that you can find out some photos' exif information ",
+  "body": "### Welcome to the Pages.\r\n\r\n***\r\n\r\nYou can upload a photo to the webpage and you will get some exif imformation about the photo if it have.\r\n\r\nLet's check out ",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
