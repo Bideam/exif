@@ -1,69 +1,67 @@
-<!doctype html>
-<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
-<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on https://github.com/jonrohan -->
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
-  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen">
-  <link rel="stylesheet" href="stylesheets/github-dark.css">
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script type="text/javascript" src="javascripts/script.js"></script>
-
-  <title>Exif</title>
-  <meta name="description" content="A static web page that you can find out some photos&#39; exif information ">
-
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<title>Find out The Picture's EXIF</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+	<script type="text/javascript" src="js/lib/jquery-1.2.3.pack.js"></script>
+	<script type="text/javascript" src="js/lib/jquery.jcarousel.pack.js"></script>
+	<script type="text/javascript" src="js/exif.js"></script>
+	<script type="text/javascript" src="js/exifuser.js"></script>
+	<link rel="stylesheet" type="text/css" href="js/lib/jquery.jcarousel.css" />
+	<link rel="stylesheet" type="text/css" href="js/skins/tango/skin.css" />
 </head>
-
 <body>
+	<!-- Shell -->
+	<div class="shell">
+		
+		<!-- Content -->
+		<div id="content">
+			
+			<!-- Image -->
+			<div class="frame" id="frame">
+				<!--<img src="css/images/picture.jpg" alt="" />-->
+				<label for="getfile" id="hint"></label>
+				<input type="file" accept="image/*" id="getfile"></input>
+			</div>
 
-  <div class="wrapper">
-    <header>
-      <h1 class="title">Exif</h1>
-    </header>
-    <div id="container">
-      <p class="tagline">A static web page that you can find out some photos&#39; exif information </p>
-      <div id="main" role="main">
-        <div class="download-bar">
-        <div class="inner">
-          <a href="https://github.com/Bideam/exif/tarball/master" class="download-button tar"><span>Download</span></a>
-          <a href="https://github.com/Bideam/exif/zipball/master" class="download-button zip"><span>Download</span></a>
-          <a href="https://github.com/Bideam/exif" class="code">View Exif on GitHub</a>
-        </div>
-        <span class="blc"></span><span class="trc"></span>
-        </div>
-        <article class="markdown-body">
-          <h3>
-<a id="welcome-to-the-pages" class="anchor" href="#welcome-to-the-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to the Pages.</h3>
-
-<hr>
-
-<p>You can upload a photo to the webpage and you will get some exif imformation about the photo if it has.</p>
-
-<p>Let's check out </p>
-        </article>
-      </div>
-    </div>
-    <footer>
-      <div class="owner">
-      <p><a href="https://github.com/Bideam" class="avatar"><img src="https://avatars0.githubusercontent.com/u/16514995?v=3&amp;s=60" width="48" height="48"></a> <a href="https://github.com/Bideam">Bideam</a> maintains <a href="https://github.com/Bideam/exif">Exif</a></p>
+			<!-- End Image -->
+			<div class="imgattr">
+				<p id="showname"></p>
+				<p id="showsize"></p>
+			</div>
+			
+			<!-- Description -->
+			<div class="description">
+				<h2>照片EXIF信息</h2>
+				<p>上传照片获得照片的EXIF信息并显示在下方</p>
+				<div class="source-data" id="showexif"></div>
+				<p>上传照片的详细数据如下</p>
+				<table class="data-explan" id="data-explan">
+					<thead>
+						<tr>
+							<th>对象</th>
+							<th>数值</th>
+						</tr>
+					</thead>
+					<tbody>
+					</tbody>
+				</table> 
+			</div>
+			<!-- End Description -->
+			
+			<div class="cl">&nbsp;</div>
+			
 
 
-      </div>
-      <div class="creds">
-        <small>This page generated using <a href="https://pages.github.com/">GitHub Pages</a><br>theme by <a href="https://twitter.com/jonrohan/">Jon Rohan</a></small>
-      </div>
-    </footer>
-  </div>
-  <div class="current-section">
-    <a href="#top">Scroll to top</a>
-    <a href="https://github.com/Bideam/exif/tarball/master" class="tar">tar</a><a href="https://github.com/Bideam/exif/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
-    <p class="name"></p>
-  </div>
-
-  
+			
+			<div class="cl">&nbsp;</div>
+			
+		</div>
+		<!-- End Content -->
+		
+	</div>
+	<!-- End Shell -->
+	
 </body>
 </html>
