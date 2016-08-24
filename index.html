@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<title>Find out The Picture's EXIF</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+	<script type="text/javascript" src="js/lib/jquery-1.2.3.pack.js"></script>
+	<script type="text/javascript" src="js/lib/jquery.jcarousel.pack.js"></script>
+	<script type="text/javascript" src="js/exif.js"></script>
+	<script type="text/javascript" src="js/exifuser.js"></script>
+	<link rel="stylesheet" type="text/css" href="js/lib/jquery.jcarousel.css" />
+	<link rel="stylesheet" type="text/css" href="js/skins/tango/skin.css" />
+</head>
+<body>
+	<!-- Shell -->
+	<div class="shell">
+		
+		<!-- Content -->
+		<div id="content">
+			
+			<!-- Image -->
+			<div class="frame" id="frame">
+				<!--<img src="css/images/picture.jpg" alt="" />-->
+				<label for="getfile" id="hint"></label>
+				<input type="file" accept="image/*" id="getfile"></input>
+			</div>
+
+			<!-- End Image -->
+			<div class="imgattr">
+				<p id="showname"></p>
+				<p id="showsize"></p>
+			</div>
+			
+			<!-- Description -->
+			<div class="description">
+				<h2>照片EXIF信息</h2>
+				<p>上传照片获得照片的EXIF信息并显示在下方</p>
+				<div class="source-data" id="showexif"></div>
+				<p>上传照片的详细数据如下</p>
+				<table class="data-explan" id="data-explan">
+					<thead>
+						<tr>
+							<th>对象</th>
+							<th>数值</th>
+						</tr>
+					</thead>
+					<tbody>
+					</tbody>
+				</table> 
+			</div>
+			<!-- End Description -->
+			
+			<div class="cl">&nbsp;</div>
+			
+
+
+			
+			<div class="cl">&nbsp;</div>
+			
+		</div>
+		<!-- End Content -->
+		
+	</div>
+	<!-- End Shell -->
+	
+</body>
+</html>
